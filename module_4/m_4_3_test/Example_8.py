@@ -18,6 +18,7 @@
 """
 
 # обратить внимание на числа
+
 num = int(input())
 
 positive_number = (num % 2 == 0)
@@ -68,3 +69,11 @@ elif 29 <= num <= 36:
 else:
     print(exc)
 """
+
+"""
+import time
+
+start = time.time()
+your_code_here()
+end = time.time()
+print(end - start)"""

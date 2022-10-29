@@ -21,3 +21,12 @@ else:
     num = (num - 2) * 4 + 21
     print(num)
 # print(count)
+
+
+"""
+a = int(input())
+if a <= 2:
+    print(a * 10.5)
+else:
+    print(((a - 2) * 4) + 21)
+"""

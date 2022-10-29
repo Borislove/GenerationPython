@@ -20,7 +20,6 @@
 
 Примечание 1. Если смешать красный и красный, то получится красный и т.д
 """
-
 color1 = str(input())
 color2 = str(input())
 
@@ -44,7 +43,6 @@ orange_test = ((color1 == red) and (color2 == yellow)) or ((color2 == red) and (
 # синий и желтый - зеленый
 green_test = ((color1 == blue) and (color2 == yellow)) or ((color2 == blue) and (color1 == yellow))
 # ----------------------------------------------------------------
-
 # flag color
 # ----------------------------------------------------------------
 color1 = (color1 == red) or (color1 == blue) or (color1 == yellow)
