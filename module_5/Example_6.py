@@ -14,6 +14,8 @@
 Примечание. Шахматный слон ходит по диагоналям.
 """
 
+"""
+# что за дичь! почему не работает 28 тест?
 num1, num2, num3, num4 = int(input()), int(input()), int(input()), int(input())
 x1, y1, x2, y2 = num1, num2, num3, num4
 
@@ -38,12 +40,12 @@ else:
 
 ceil_1 = (1 <= num1 <= 8) and (1 <= num2 <= 8)
 ceil_2 = (1 <= num3 <= 8) and (1 <= num4 <= 8)
-
 """
+
 x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
 
 if (x1 - y1 == x2 - y2) or (x1 + y1 == x2 + y2):
     print('YES')
 else:
     print('NO')
-"""
+
