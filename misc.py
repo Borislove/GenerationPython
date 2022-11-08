@@ -11,7 +11,6 @@ for i in range(1, 6):
     print(total, end='')
 """
 
-
 print((81 ** 2.6) / (9 ** 3.7))
 
 print(81 ** 2.6)
@@ -22,3 +21,16 @@ b = 9 ** 3.7
 print(float(a / b))
 
 print(91634.9292941281 / 3393.886270152893)
+
+import turtle
+
+joe = turtle.Turtle()
+joe = turtle.forward(1001)
+
+print(49 % 25)
+
+print(17 // 2)
+
+
+from  math import  factorial
+factorial(10)
