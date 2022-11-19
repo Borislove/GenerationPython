@@ -4,10 +4,11 @@
 num1 = int(input())
 num2 = int(input())
 
-sum = num1 + num2  # сумма
+add = num1 + num2  # сумма
 sub = num1 - num2  # разность
 mul = num1 * num2  # произведение
 
-print(num1, '+', num2, '=', sum)
+print(num1, '+', num2, '=', add)
 print(num1, '-', num2, '=', sub)
 print(num1, '*', num2, '=', mul)
+

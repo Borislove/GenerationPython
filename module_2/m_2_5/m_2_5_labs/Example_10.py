@@ -3,8 +3,8 @@
 
 # На вход программе подаётся целое число – количество минут.
 
-#minute = int(input())
-minute  = 224
+# minute = int(input())
+minute = 224
 
 hour = minute // 60
 remains = minute % 60

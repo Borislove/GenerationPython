@@ -13,6 +13,7 @@
 Программа должна вывести одно число – стоимость покупки (трех компьютеров).
 """
 
+"""
 monitor_price = int(input())  # цена монитора
 mainframe_price = int(input())  # цена системного блока
 keyboard_price = int(input())  # цена клавиатуры
@@ -22,3 +23,10 @@ computer_price = monitor_price + mainframe_price + keyboard_price + mouse_price 
 
 ratio = 3  # коэффициент
 print(computer_price * ratio)
+"""
+
+#2
+total = 0
+for _ in range(4):
+    total += int(input())
+print(total * 3)

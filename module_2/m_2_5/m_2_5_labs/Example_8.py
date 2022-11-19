@@ -8,6 +8,18 @@
 # Входные данные
 # На вход дается число целое n – население Вселенной.
 
+"""
 n = int(input())
 
 print(n // 2 + n % 2)
+"""
+
+"""
+# v2
+print((int(input()) // -2) * -1)
+"""
+
+# v3
+from math import ceil
+
+print(ceil(int(input()) / 2))
