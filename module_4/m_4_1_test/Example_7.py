@@ -1,5 +1,7 @@
 # Наименьшее из четырёх чисел 🌶️
 
+"""
+#v1
 num1 = int(input())
 num2 = int(input())
 num3 = int(input())
@@ -23,7 +25,9 @@ else:
     less = num4
 
 print(less)
+"""
 
+"""
 # интересно
 a = int(input())
 b = int(input())
@@ -36,3 +40,13 @@ if c > d:
 if a > c:
     a = c
 print(a)
+"""
+
+# print(min(int(input()), int(input()), int(input()), int(input())))
+
+# v2
+lst = [int(input()) for _ in range(4)]
+print(min(lst))
+
+# v2_1
+print(min(int(input()) for _ in range(4)))

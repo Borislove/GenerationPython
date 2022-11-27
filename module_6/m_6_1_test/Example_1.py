@@ -4,3 +4,6 @@
 
 a, b = input(), input()
 print((float(a) * float(b)) / 2)
+
+# v1.1
+print(float(input()) * float(input()) / 2)

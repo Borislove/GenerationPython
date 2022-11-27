@@ -21,3 +21,6 @@ else:
 
 print(10 <= age <= 15)  # True
 print(gender == 'f')
+
+# v2.0
+print('YES' if (10 <= int(input()) <= 15) and (input() == 'f') else 'NO')

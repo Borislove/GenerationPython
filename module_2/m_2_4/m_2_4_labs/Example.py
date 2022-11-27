@@ -15,8 +15,13 @@ num += 1
 print(num)
 """
 
+"""
 # v2
 num = int(input())
 for _ in range(3):
     print(num)
     num += 1
+"""
+
+# v3.0
+print(sum(int(input()) for _ in range(3)))

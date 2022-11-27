@@ -10,11 +10,13 @@
 На вход программе подаётся четыре числа от 1 до 8.
 """
 
-#num1 = int(input())
-#num2 = int(input())
-#num3 = int(input())
-#num4 = int(input())
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+# num4 = int(input())
 
+
+"""
 num1 = 1
 num2 = 8
 num3 = 8
@@ -50,3 +52,7 @@ else:
 
 print('ceil_1', ceil_1)
 print('ceil_2', ceil_2)
+"""
+
+lst = [int(input()) for _ in range(4)]
+print('YES' if -1 <= lst[0] - lst[2] <= 1 and -1 <= lst[1] - lst[3] <= 1 else 'NO')

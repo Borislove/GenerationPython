@@ -2,4 +2,6 @@
 # Дано положительное действительное число. Выведите его дробную часть.
 
 num = float(input())
-print(num%1)
+print(num % 1)
+
+print(float(input()) % 1)

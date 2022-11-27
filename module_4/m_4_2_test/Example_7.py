@@ -11,6 +11,7 @@
 
 # Примечание. Шахматная ладья ходит по горизонтали или вертикали.
 
+"""
 num1 = int(input())
 num2 = int(input())
 num3 = int(input())
@@ -30,9 +31,11 @@ else:
 print(ceil_1)
 print(ceil_2)
 """
-4  4
-4  4
-4  5
-5  5
-y  n
-"""
+
+# v2.0
+lst = [int(input()) for _ in range(4)]
+if lst[0] == lst[2] or lst[1] == lst[3]:
+    print('YES')
+else:
+    print('NO')
+# print('YES' if ((lst[0] == lst[2]) or (lst[1] == [3])) else 'NO')

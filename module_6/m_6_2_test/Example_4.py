@@ -3,6 +3,7 @@
 Даны названия трех городов. Напишите программу, которая определяет самое короткое и самое длинное название города.
 """
 
+"""
 city1, city2, city3 = input(), input(), input()
 
 min_title = min(len(city1), len(city2), len(city3))
@@ -26,3 +27,7 @@ elif max_title == city_len2:
 else:
     print(city3)
 
+"""
+
+lst = [input() for _ in range(3)]
+print(min(lst, key=len), max(lst, key=len), sep='\n')

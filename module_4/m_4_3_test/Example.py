@@ -15,6 +15,7 @@
 Если Зум быстрее Флэша нужно вывести «NO», если Флэш быстрее Зума нужно вывести «YES», если их скорости равны нужно вывести "Don't know".
 """
 
+"""
 num1, num2, = int(input()), int(input())
 
 speed_zoom = num1
@@ -26,7 +27,16 @@ elif speed_zoom < speed_flash:
     print('YES')
 else:
     print("Don't know")
+"""
 
+# v1.1
+speed_zoom, speed_flash = int(input()), int(input())
+if speed_zoom > speed_flash:
+    print('NO')
+elif speed_zoom < speed_flash:
+    print('YES')
+else:
+    print("Don't know")
 
 """ ???
 zum, flash, answer = int(input()), int(input()), ("Don't know", "NO", "YES")

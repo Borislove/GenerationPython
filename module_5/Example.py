@@ -10,7 +10,7 @@
 Формат выходных данных
 Программа должна вывести текст в соответствии с условием задачи.
 """
-
+"""
 num = int(input())
 
 units = num % 10 == 0  # единицы
@@ -21,6 +21,7 @@ if check:
     print('YES')
 else:
     print('NO')
+"""
 
 """test
 print(num)
@@ -35,4 +36,16 @@ else:
     print('NO')
 """
 
+"""
+num = int(input())
+count = 0
+for _ in range(2):
+    if num % 10 == 0:
+        count += 1
+    num //= 10
+print('YES' if count == 2 else 'NO')
+"""
 
+print('YES' if int(input()) % 100 == 0 else 'NO')
+
+# print('YES' if input()[-2:] == '00' else 'NO')

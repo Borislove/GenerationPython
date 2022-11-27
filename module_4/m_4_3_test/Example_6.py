@@ -14,6 +14,7 @@
 если операция неверная либо если происходит деление на ноль.
 """
 # calc
+
 num1, num2 = int(input()), int(input())
 operation = str(input())
 
@@ -65,3 +66,4 @@ match operation:
     case "/":
         print(div)
 """
+

@@ -10,6 +10,8 @@
 Программа должна вывести шесть чисел, образованных при перестановке цифр заданного числа в следующем порядке:
 abc,acb,bac,bca,cab,cba
 """
+import math
+
 """
 num = int(input())
 
@@ -59,14 +61,42 @@ print(s3, s2[::-1], sep='\n')
 print(s3[::-1], s1[::-1], sep='\n')
 """
 
+"""
 # v3_2
 num = int(input())
 a, b, c = str(num // 100), str((num // 10) % 10), str(num % 10)
 s1, s2, s3 = str(a + b + c), str(a + c + b), str(b + a + c)
 print(s1, s2, s3, s2[::-1], s3[::-1], s1[::-1], sep='\n')
+"""
 
 """""
 # v5
 a, b, c = input()
 print(a + b + c, a + c + b, b + a + c, b + c + a, c + a + b, c + b + a, sep='\n')
+"""
+
+"""
+# v4
+a, b, c = input()
+arr_1 = [a, b, c]
+print(arr_1, arr_1[::-1])
+arr_2 = [b, a, c]
+print(arr_2, arr_2[::-1])
+arr_3 = [a, c, b]
+print(arr_3, arr_3[::-1])
+"""
+
+# v5
+from itertools import *
+
+a, b, c = input()
+lst = [a,b,c]
+for i in permutations(lst):
+    print(i, end=' ')
+
+
+"""
+from itertools import permutations
+
+print(' '.join(map(lambda x: ''.join(x), permutations('abc'))))
 """

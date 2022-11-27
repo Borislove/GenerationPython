@@ -7,7 +7,7 @@
 Формат входных данных
 На вход программе подается целое трехзначное число.
 """
-
+"""
 num = int(input())
 
 # разбивка по разрядам
@@ -39,3 +39,16 @@ print(a + b)
 print(b + c)
 print(a + c)
 print(average_digit == a + c)
+"""
+
+from statistics import median
+
+lst = [int(i) for i in input()]
+flag = max(lst) - min(lst) == median(lst)
+print('Число интересное' if flag else 'Число неинтересное')
+
+"""sorted
+numbers = [int(i) for i in input()]
+numbers.sort()
+print('Число интересное' if numbers[2] - numbers[0] == numbers[1] else 'Число неинтересное')
+"""

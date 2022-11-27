@@ -33,3 +33,6 @@ print(total)
 num1, num2, num3, = int(input()), int(input()), int(input())
 print(num1 + num2 + num3)
 """
+
+# v6.0
+print(sum(int(input()) for _ in range(3)))

@@ -7,6 +7,7 @@
 В таблице приведены римские цифры для чисел от 1 до 10.
 """
 
+"""
 num = int(input())
 
 if num == 1:
@@ -29,5 +30,16 @@ elif num == 9:
     print('IX')
 elif num == 10:
     print('X')
+else:
+    print('ошибка')
+    
+"""
+# v2.0
+num = int(input())
+lst = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+for i in range(len(lst)):
+    if i == num:
+        print(lst[i])
+        break
 else:
     print('ошибка')

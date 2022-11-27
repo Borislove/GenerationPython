@@ -37,7 +37,7 @@ green = 'зеленый'
 # ----------------------------------------------------------------
 # mixing
 # красный и синий - фиолетовый
-purple_test = (((color1 == red) and (color2 == blue))) or (((color2 == red) and (color1 == blue)))
+purple_test = ((color1 == red) and (color2 == blue)) or ((color2 == red) and (color1 == blue))
 # красный и желтый - оранжевый
 orange_test = ((color1 == red) and (color2 == yellow)) or ((color2 == red) and (color1 == yellow))
 # синий и желтый - зеленый
