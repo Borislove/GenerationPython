@@ -13,6 +13,7 @@
 
 # На вход программе подается одно натуральное число
 
+"""
 num = int(input())
 tmp_num = num
 s = str(num)
@@ -49,3 +50,12 @@ a = a ** counter
 tmp_num = tmp_num // a
 print(tmp_num)
 print(tmp_num + last_digit_tmp)
+"""
+
+
+"""
+#use library
+import numpy
+nums = [int(i) for i in input()]
+print(sum(nums), len(nums), numpy.prod(nums), numpy.mean(nums), nums[0], nums[0] + nums[-1], sep='\n')
+"""

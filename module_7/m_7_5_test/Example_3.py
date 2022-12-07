@@ -2,6 +2,7 @@
 """Дано натуральное число n, ,n≥10. Напишите программу, которая определяет его максимальную и минимальную цифры."""
 import math
 
+"""
 num = int(input())
 num_max = num
 
@@ -26,3 +27,10 @@ while num_max:
         maximum = digit
     num_max //= 10
 print(s_max, maximum)
+"""
+
+num = (input())
+print('Максимальная цифра равна', max(num))
+print('Минимальная цифра равна', min(num))
+
+# num = input(); print(f'Максимальная цифра равна {max(num)}\nМинимальная цифра равна {min(num)}')

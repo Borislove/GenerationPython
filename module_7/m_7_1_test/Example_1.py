@@ -6,7 +6,22 @@
 
 # В первой строке записано текстовое предложение, во второй — количество повторений.
 
+"""
+# v1.0
 str_, range_ = input(), int(input())
 
 for i in range(range_):
     print(str_)
+"""
+
+"""
+# v2.0
+s = input()
+for _ in range(int(input())):
+    print(s)
+"""
+
+print((input() + '\n') * int(input()))
+
+s = input()
+[print(s) for _ in range(int(input()))]

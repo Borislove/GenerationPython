@@ -10,3 +10,5 @@ for i in range(10):
         total *=num
 print(total)
 
+
+

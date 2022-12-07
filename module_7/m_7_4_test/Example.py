@@ -12,3 +12,5 @@ text_exit = ''
 while text_exit != 'КОНЕЦ':
     print(text_exit)
     text_exit = input()
+
+# [print(i) for i in iter(input, 'КОНЕЦ')]

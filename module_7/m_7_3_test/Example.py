@@ -13,12 +13,6 @@ a, b = num1, num2
 counter = 0
 if a <= b:
     for i in range(a, b + 1):
-        if (i ** 3 % 10) == 4:
+        if (i ** 3 % 10) == 4 or (i ** 3 % 10) == 9:
             counter += 1
-            #print(counter)
-        if (i ** 3 % 10) == 9:
-            counter +=1
-            #print(counter)
     print(counter)
-
-

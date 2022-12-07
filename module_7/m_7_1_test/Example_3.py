@@ -5,7 +5,14 @@
 Напишите программу, которая печатает звездный прямоугольник размерами n×19.
 """
 
+"""
 num = int(input())
 
 for i in range(num):
     print('*' * 19)
+"""
+
+for _ in range(int(input())):
+    print('*' * 19)
+
+# print(('*' * 19 + '\n') * int(input()))

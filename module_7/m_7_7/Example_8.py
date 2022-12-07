@@ -1,13 +1,35 @@
-num = int(input())
-max_digit = 0
-while num != 0:
-    digit = num % 10
+# Ревью кода-4 🌶️🌶️
+
+"""original
+n = int(input())
+max_digit = n % 10
+while n > 0:
+    digit = n % 10
     if digit % 3 == 0:
-        max_digit = digit
-    num //= 10
+        if digit < max_digit:
+            digit = max_digit
+    n = n % 10
 if max_digit == 0:
     print('NO')
 else:
     print(max_digit)
+"""
 
+n = int(input())
+max_digit = -1
+while n > 0:
+    digit = n % 10
+    if digit % 3 == 0:
+        if digit > max_digit:
+            max_digit = digit
+    n = n // 10
+if max_digit == -1:
+    print('NO')
+else:
+    print(max_digit)
 
+"""
+num = input()
+max_digit = int(max(num))
+print('YES' if max_digit % 3 == 0 else 'NO')
+"""

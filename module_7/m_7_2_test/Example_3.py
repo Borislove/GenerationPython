@@ -7,8 +7,6 @@ num1, num2 = int(input()), int(input())
 m = num1
 n = num2
 
-test = m
-
 value = 0
 count = 0
 
@@ -21,6 +19,9 @@ if m > n:
 """
 
 if m > n:
-    for k in range(m, n-1, -1):
+    for k in range(m, n - 1, -1):
         if (k % 2 != 0):
             print(k)
+
+
+

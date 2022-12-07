@@ -9,7 +9,7 @@
 
 num = int(input())
 
-for i in range(1,num+1):
+for i in range(1, num + 1):
     if 5 <= i <= 9:
         continue
     elif 17 <= i <= 37:
@@ -17,3 +17,5 @@ for i in range(1,num+1):
     elif 78 <= i <= 87:
         continue
     print(i)
+
+# [print(i) for i in range(1, int(input()) + 1) if not (5 <= i <= 9 or 17 <= i <= 37 or 78 <= i <= 87)]

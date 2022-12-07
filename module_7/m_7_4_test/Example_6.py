@@ -6,11 +6,23 @@
 
 # На вход программе подается последовательность чисел, каждое число на отдельной строке.
 
+"""
 flag = True
 count = 0
 while flag:
     num = int(input())
     if (num > 5) or (num < 0):
+        flag = False
+    elif num == 5:
+        count += 1
+print(count)
+"""
+
+flag = True
+count = 0
+while flag:
+    num = int(input())
+    if 0 < num > 5:
         flag = False
     elif num == 5:
         count += 1

@@ -9,6 +9,7 @@
 На вход программе подается последовательность чисел, каждое число на отдельной строке.
 """
 
+"""
 flag = True
 while flag:
     num = int(input())
@@ -16,5 +17,18 @@ while flag:
         print(num)
     else:
         flag = False
+"""
+
+"""
+while not (num := int(input())) % 7:
+    print(num)
+"""
+
+while True:
+    num = int(input())
+    if num % 7 == 0:
+        print(num)
+    else:
+        break
 
 
