@@ -9,11 +9,8 @@
 num = int(input())
 lst = []
 
-for i in range(num):
-    n = int(input())
-    lst.append(n)
-
-sorted(lst)
-del lst[0]
-del lst[-1]
+for _ in range(num):
+    lst.append(int(input()))
+del lst[lst.index(max(lst))]
+del lst[lst.index(min(lst))]
 print(*lst, sep='\n')

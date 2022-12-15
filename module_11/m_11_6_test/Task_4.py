@@ -4,12 +4,11 @@
 Из данной строки формируется список чисел. Напишите программу, которая сортирует и выводит данный список сначала по возрастанию, а затем по убыванию.
 """
 # 4 5 1 2 3 8
-s = input()
+s = input().split()
 
 lst = []
-for i in range(len(s)):
-    if s[i].isdigit():
-        lst.append(s[i])
+for c in s:
+    lst.append(int(c))
 
 lst.sort()
 print(*lst)

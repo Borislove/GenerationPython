@@ -5,8 +5,26 @@
 """
 
 num = int(input())
-txt = str()
-while num > 0:
-    txt += str(num % 2)
-    num /= 2
-print(txt)
+
+lst = []
+while num != 0:
+    remainder = num - num % 2
+    lst.append(num - remainder)
+    num //= 2
+
+lst.reverse()
+print(*lst, sep='')
+
+
+"""
+n = int(input())
+total = ''
+while n > 0:
+    if n % 2 == 0:
+        total += '0'
+    else:
+        total += '1'
+    n //= 2
+total = total[::-1]
+print(total)
+"""

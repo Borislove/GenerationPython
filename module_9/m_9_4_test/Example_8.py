@@ -6,12 +6,9 @@
 """
 
 s = input()
-print(s.find('f'))
-print(s.rfind('f'))
-
-for i in range(len(s)):
-    if s[i] == 'f':
-        print(i)
-    
+if s.count('f') == 1:
+    print(s.find('f'))
+elif s.count('f') > 1:
+    print(s.find('f'), s.rfind('f'), end='')
 else:
     print('NO')

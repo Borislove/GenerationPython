@@ -8,8 +8,11 @@ num = int(input())
 
 lst = []
 for _ in range(num):
-    s = input().lower()
-    lst.extend(s)
-    for _ in range(len(lst)):
-        if s in lst:
-            print(*lst, sep='\n')
+    s = input()
+    lst.append(s)
+
+request = input()
+
+for i in range(len(lst)):
+    if request.lower() in (lst[i]).lower():
+        print(lst[i])
