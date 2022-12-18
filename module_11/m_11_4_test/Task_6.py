@@ -7,23 +7,19 @@
 Формат входных данных
 На вход программе подаются натуральное число n — количество строк, затем сами строки в указанном количестве, затем число k, затем сами поисковые запросы.
 """
-
-lst = []
-for _ in range(int(input())):
-    lst.append(input())
-
-# запросы
-lst_request = []
-for i in range(int(input())):
-    lst_request.append(input())
-
-lst_input = []
+n = int(input())
+s1 = []
+s2 = []
 counter = 0
-for i in range(len(lst)):
-    for j in range(len(lst_request)):
-        if lst_request[j].lower() in lst[i].lower():
+for _ in range(n):
+    s1.append(input())
+k = int(input())
+for _ in range(k):
+    s2.append(input())
+for i in range(n):
+    for q in range(k):
+        if s2[q].lower() in s1[i].lower():
             counter += 1
-            if counter == len(lst_request):
-                lst_input.append(lst_request[j])
-                counter = 0
-print(lst_input)
+    if counter == k:
+        print(s1[i])
+    counter = 0
